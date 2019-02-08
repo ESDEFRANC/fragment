@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".addFragment">
+    <TextView
+            android:text="@string/Cuantity"
+            android:layout_width="@dimen/CantityMarginW"
+            android:layout_height="@dimen/CantityMarginH"
+            android:id="@+id/StockTV"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/CantityMarginS"
+            android:layout_marginTop="@dimen/CantityMarginT"
+            app:layout_constraintTop_toBottomOf="@+id/NameTV"/>
+    <Button
+            android:text="@string/menu_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/AddProduct"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/Margin"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/Margin"
+            android:layout_marginBottom="@dimen/Margin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="@dimen/Margin"
+            app:layout_constraintTop_toBottomOf="@+id/DescriptionET"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/NameET"
+            android:layout_marginTop="@dimen/NameEtMarginTop"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="@dimen/Margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/NameTV"
+            android:layout_marginStart="@dimen/Margin"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/StockET"
+            android:layout_marginTop="@dimen/StockEtMarginTop"
+            app:layout_constraintTop_toBottomOf="@+id/NameET"
+            android:layout_marginEnd="@dimen/Margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/StockTV"
+            android:layout_marginStart="@dimen/Margin"/>
+
+    <TextView
+            android:text="@string/Description"
+            android:layout_width="@dimen/CantityMarginW"
+            android:layout_height="@dimen/CantityMarginH"
+            android:id="@+id/DescriptionTV"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/CantityMarginS"
+            android:layout_marginTop="@dimen/DescriptionMarginTop"
+            app:layout_constraintTop_toBottomOf="@+id/StockTV"/>
+    <EditText android:layout_width="@dimen/DescriptionMarginW"
+              android:layout_height="@dimen/DescriptionMarginH"
+              app:layout_constraintTop_toBottomOf="@+id/StockET"
+              app:layout_constraintEnd_toEndOf="parent"
+              android:layout_marginEnd="@dimen/Margin" android:id="@+id/DescriptionET"
+              app:layout_constraintStart_toEndOf="@+id/DescriptionTV" android:layout_marginStart="@dimen/Margin"/>
+    <TextView
+            android:text="@string/NameProduct"
+            android:layout_width="@dimen/CantityMarginW"
+            android:layout_height="@dimen/CantityMarginH"
+            android:id="@+id/NameTV"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/CantityMarginS"
+            android:layout_marginTop="@dimen/CantityMarginW"
+            app:layout_constraintTop_toTopOf="parent"/>
+</android.support.constraint.ConstraintLayout>

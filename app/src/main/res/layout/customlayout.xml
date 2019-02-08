@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+    <ImageView
+            android:layout_width="@dimen/ImageProductCustomMarginWH"
+            android:layout_height="@dimen/ImageProductCustomMarginWH"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/IamgeProduct"
+            tools:ignore="MissingConstraints"
+            android:layout_marginTop="@dimen/Margin"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="@dimen/Margin"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+            android:text="TextView"
+            android:textSize="14sp"
+            android:layout_width="@dimen/NombreCustomMarginW"
+            android:layout_height="@dimen/NombreCustomMarginH"
+            android:id="@+id/Nombre"
+            tools:ignore="MissingConstraints"
+            android:layout_marginTop="@dimen/Margin"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/IamgeProduct"
+            android:layout_marginStart="@dimen/Margin"
+            android:textStyle="bold"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/StockTV"
+            android:layout_marginTop="@dimen/Margin"
+            app:layout_constraintTop_toBottomOf="@+id/Nombre"
+            app:layout_constraintStart_toStartOf="@+id/Nombre"
+    />
+    <TextView
+            android:text="delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ButtonDelete"
+            app:layout_constraintStart_toEndOf="@+id/Nombre"
+            android:layout_marginStart="@dimen/DescriptionClickedMarginH"
+            android:layout_marginTop="@dimen/CantityMarginT"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/colorAccent"
+            android:layout_marginEnd="@dimen/Margin"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>
